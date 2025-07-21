@@ -1,0 +1,41 @@
+# .gitignore for ASA/CatsB Secure Bot
+
+# Python sensitive files
+config.py
+*.env
+.env.local
+.env*.local
+
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+venv/
+env/
+ENV/
+
+# Node/NPM files (for Lunar integration)
+node_modules/
+npm-debug.log*
+
+# Build/compiled files
+build/
+dist/
+*.egg-info/
