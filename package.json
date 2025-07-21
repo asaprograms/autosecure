@@ -1,0 +1,9 @@
+{
+  "name": "autosecure-main",
+  "version": "1.0.0",
+  "description": "Node.js integration for autosecure",
+  "main": "utils/lunarfetch.js",
+  "dependencies": {
+    "lunarclient-websocket": "^1.0.0"
+  }
+} 
