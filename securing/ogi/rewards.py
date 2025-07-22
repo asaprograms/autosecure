@@ -1,3 +1,5 @@
+# grabbing ms rewards info from before secure
+
 def get_rewards(client):
     try:
         resp = client.get(

@@ -1,3 +1,5 @@
+# grabbing consented apps from before secure
+
 def get_oauths(client):
     try:
         resp = client.get(

@@ -1,3 +1,5 @@
+# grabbing personal info from before secure in case of lock, easy appeal.
+
 import time
 
 

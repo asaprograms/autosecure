@@ -1,3 +1,4 @@
+# grabbing linked cards so they aren't lost from before secure
 
 def get_cards(client, msadelegate):
     try:

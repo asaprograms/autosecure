@@ -1,3 +1,5 @@
+# sending one time login code to email/security email for an email
+
 import requests
 
 _API_URL = "https://login.live.com/GetOneTimeCode.srf"

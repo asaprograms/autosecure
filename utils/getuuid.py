@@ -2,7 +2,7 @@ import time
 from typing import Optional
 import requests
 
-API_URL = "https://api.minetools.eu/uuid/{username}"
+API_URL = "https://api.minetools.eu/uuid/{username}" # using minetools to grab the uuid of a user so it is not just ign bound
 
 def get_uuid(username: str, retry_count: int = 0, max_retries: int = 3) -> Optional[str]:
     base_delay = 1.0  # seconds

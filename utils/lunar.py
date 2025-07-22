@@ -1,3 +1,4 @@
+# uses ./lunarfetch.js WHICH USES the lunar websocket so completely opional flow
 import json
 import subprocess
 import sys

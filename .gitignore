@@ -1,4 +1,4 @@
-# .gitignore for ASA/CatsB Secure Bot
+# .gitignore for asas version of the autosecure
 
 # Python sensitive files
 config.py
@@ -39,3 +39,6 @@ npm-debug.log*
 build/
 dist/
 *.egg-info/
+settings.py
+
+# Git files

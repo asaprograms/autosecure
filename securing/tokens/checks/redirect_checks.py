@@ -1,9 +1,9 @@
 def redirect_checks(redirect_url: str, client, headers):
-    if redirect_url.startswith("https://account.microsoft.com/family/child-consent/child-landing"):
+    if redirect_url.startswith("https://account.microsoft.com/family/child-consent/child-landing"): # child account
         return "child_landing"
     if "/identity/confirm" in redirect_url:
         return "phone_locked"
-    if redirect_url.startswith("https://account.live.com/pipl/accrue"):
+    if redirect_url.startswith("https://account.live.com/pipl/accrue"): # chinese lock
         pipl_url = "https://account.live.com/API/ChinaPIPLAccrual"
         payload = {
             "uiflvr": 1001,
@@ -20,6 +20,6 @@ def redirect_checks(redirect_url: str, client, headers):
         except Exception:
             pass
         return None
-    if redirect_url.startswith("https://account.live.com/recover"):
+    if redirect_url.startswith("https://account.live.com/recover"): # password is flagged with a required reset
         return "password_flagged"
     return None 

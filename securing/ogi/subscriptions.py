@@ -1,3 +1,6 @@
+# grabbing linked subscription info from before secure
+# tells when next renewal is
+
 def get_subscriptions(client, msadelegate):
     try:
         resp = client.get(

@@ -2,7 +2,7 @@ from urllib.parse import urlencode
 
 
 def add_alias(client, name: str, canary: str) -> bool:
-    url = "https://account.live.com/AddAssocId"
+    url = "https://account.live.com/AddAssocId" # microsoft alias site
     payload = {
         "canary": canary,
         "PostOption": "NONE",

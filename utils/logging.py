@@ -1,3 +1,5 @@
+# to log how long it takes to reach each milestone
+
 import sys, datetime
 
 def log(message: str):

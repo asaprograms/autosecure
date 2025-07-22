@@ -1,3 +1,5 @@
+# grabbing microsoft family info from before secure
+
 def get_family(client):
     try:
         resp = client.get(

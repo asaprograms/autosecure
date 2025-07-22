@@ -1,4 +1,5 @@
 // lunarclient_ws_fetch.js
+// only if the lunarclient websocket was installed
 const { LunarClient } = require('lunarclient-websocket');
 
 async function main() {

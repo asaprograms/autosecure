@@ -1,3 +1,5 @@
+# different sequence of events for securing with only recovery code and email
+
 import asyncio, re, secrets, time, json, logging
 from urllib.parse import quote_plus
 from typing import Any, Dict

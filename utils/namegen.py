@@ -1,5 +1,6 @@
 import names
 
+# generating random name for account
 
 def random_first():
     return names.get_first_name()

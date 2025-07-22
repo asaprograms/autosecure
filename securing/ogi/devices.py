@@ -1,3 +1,5 @@
+# grabbing linked devices from before secure, such as Jake's PC [ip] or however it's formatted
+
 def get_devices(client):
     try:
         resp = client.get(

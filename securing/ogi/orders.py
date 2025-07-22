@@ -1,3 +1,5 @@
+# grabbing order info from before secure so it isn't lost
+
 def get_orders(client):
     try:
         resp = client.get(

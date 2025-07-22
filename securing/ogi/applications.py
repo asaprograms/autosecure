@@ -1,3 +1,4 @@
+# grabbing linked applications from before secure, such as prismlauncher
 
 def get_applications(client):
     try:
